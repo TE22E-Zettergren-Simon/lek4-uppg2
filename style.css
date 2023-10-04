@@ -1,6 +1,11 @@
 .grid {
 	display: grid;
 	grid-template-columns: 15% auto;
+	gap: 0.325rem;
+}
+
+.grid > * {
+	border-radius: 0.25rem;
 }
 
 .logo {
@@ -17,7 +22,25 @@ aside {
 	background-image: url(./img/dragon_side.png);
 }
 
+.logo,
+aside {
+	border: 2px solid black;
+}
+
 main {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+}
+
+header,
+nav,
+main,
+footer {
+	background-image: url(./img/background.jpg);
+	background-size: cover;
+}
+
+h1,
+a {
+	color: white;
 }
