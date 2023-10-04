@@ -1,0 +1,23 @@
+.grid {
+	display: grid;
+	grid-template-columns: 15% auto;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.logo img {
+	height: 6rem;
+}
+
+aside {
+	grid-row: 2/5;
+	background-image: url(./img/dragon_side.png);
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
